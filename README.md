@@ -7,8 +7,8 @@ Prototype self assessment tool for FOI requests
 ## Setup
 
     git submodule update --init
-    gem install jekyll
-    jekyll serve
+    bundle
+    bundle exec jekyll serve
 
 ## About the `baseurl`
 
