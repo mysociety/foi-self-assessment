@@ -1,6 +1,6 @@
-# Hackney FOI prototype
+# FOI Self Assessment Tool Prototype
 
-FOI and SAR request forms, for user testing.
+Prototype self assessment tool for FOI requests
 
 ---
 
