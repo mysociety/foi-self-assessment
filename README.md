@@ -12,9 +12,9 @@ Prototype self assessment tool for FOI requests
 
 ## About the `baseurl`
 
-`_config.yml` defines a `baseurl` of `/hackney-foi-prototype`, making this repo suitable for instant deployment on Github Pages.
+`_config.yml` defines a `baseurl` of `/foi-self-assessment`, making this repo suitable for instant deployment on Github Pages.
 
-However, it also means, when running locally with `jekyll serve`, you’ll need to visit <http://localhost:4000/hackney-foi-prototype/> (with a trailing slash) to see the site.
+However, it also means, when running locally with `jekyll serve`, you’ll need to visit <http://localhost:4000/foi-self-assessment/> (with a trailing slash) to see the site.
 
 If you’d like your preview site to be available at <http://localhost:4000> instead, you can override `baseurl` to an empty string, like so:
 

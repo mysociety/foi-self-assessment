@@ -3,7 +3,7 @@ description: >
   Prototype self assessment tool for FOI requests
 
 # Github Pages will use this baseurl when it deploys the site
-# to http://mysociety.github.io/hackney-foi-prototype/
+# to http://mysociety.github.io/foi-self-assessment/
 baseurl: "/foi-self-assessment"
 
 markdown: kramdown
