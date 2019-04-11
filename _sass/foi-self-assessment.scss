@@ -12,6 +12,8 @@ $path: "#{$baseurl}/vendor/govuk_frontend_toolkit/images/";
 @import "govuk-template-basics";
 @import "govuk-template-accessibility";
 
+@import "radar-chart";
+
 .container {
     @extend %site-width-container;
 }
