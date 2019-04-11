@@ -34,3 +34,38 @@ $path: "#{$baseurl}/vendor/govuk_frontend_toolkit/images/";
         padding-top: 60px;
     }
 }
+
+.results-section-heading {
+    border-bottom: 1px solid #bfc1c3;
+    padding-bottom: 0.5em;
+}
+
+.results-section-table {
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+
+.results-rating {
+    text-align: center;
+}
+
+.results-rating--none {
+    background-color: $red-50;
+}
+
+.results-rating--low {
+    background-color: $orange-50;
+}
+
+.results-rating--mid {
+    background-color: $yellow-50;
+}
+
+.results-rating--high {
+    background-color: $green-50;
+}
