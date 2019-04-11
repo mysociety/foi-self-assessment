@@ -1,3 +1,9 @@
+var storeAnswers = function storeAnswers() {
+  $('form input[type="radio"]:checked').each(function() {
+    sessionStorage.setItem(this.name, this.value);
+  });
+}
+
 $(function(){
   RadarChart.defaultConfig.color = function() {};
   RadarChart.defaultConfig.w = 330;
@@ -16,4 +22,6 @@ $(function(){
   ];
 
   RadarChart.draw(".results-radar-chart", data);
+
+  $(".submit-page").click(storeAnswers);
 });
