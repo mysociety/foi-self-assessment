@@ -5,4 +5,5 @@
 @charset "utf-8";
 $baseurl: "{{ site.baseurl }}";
 
+@import "radar-chart.min";
 @import "foi-self-assessment";
