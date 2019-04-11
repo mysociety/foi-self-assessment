@@ -4,6 +4,14 @@ var storeAnswers = function storeAnswers() {
   });
 }
 
+var renderAnswers = function renderAnswers() {
+  $('[data-question]').each(function() {
+    let key = this.dataset.question;
+    let data = sessionStorage.getItem(key);
+    this.textContent = data;
+  });
+}
+
 $(function(){
   RadarChart.defaultConfig.color = function() {};
   RadarChart.defaultConfig.w = 330;
@@ -24,4 +32,5 @@ $(function(){
   RadarChart.draw(".results-radar-chart", data);
 
   $(".submit-page").click(storeAnswers);
+  $(".results-page").ready(renderAnswers);
 });
