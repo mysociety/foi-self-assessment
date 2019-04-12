@@ -86,6 +86,29 @@ var renderAnswers = function renderAnswers() {
   });
 }
 
+var renderAnswerColours = function renderAnswerColours() {
+  $('.results-rating').each(function() {
+    let value = this.innerText;
+
+    switch(value) {
+      case '0':
+        klass = 'none';
+        break;
+      case '1':
+        klass = 'low';
+        break;
+      case '2':
+        klass = 'mid';
+        break;
+      case '3':
+        klass = 'high';
+        break;
+    }
+
+    this.classList.add('results-rating--' + klass);
+  });
+}
+
 var clearAnswers = function clearAnswers() {
   sessionStorage.clear();
 }
@@ -108,6 +131,7 @@ $(function(){
   $('.question-form').submit(submitQuestionForm);
   $(".results-page").ready(renderRadarChart);
   $(".results-page").ready(renderAnswers);
+  $(".results-page").ready(renderAnswerColours);
   $(".retake-test").click(clearAnswers);
   $(".not-implemented").click(handleNotImplemented);
 });
