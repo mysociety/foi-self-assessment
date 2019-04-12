@@ -31,6 +31,11 @@ $(function(){
 
   RadarChart.draw(".results-radar-chart", data);
 
-  $(".submit-page").click(storeAnswers);
+  $('.question-form').submit(function (evt) {
+    evt.preventDefault();
+    storeAnswers();
+    window.location.href = $(this).attr("action");
+  });
+
   $(".results-page").ready(renderAnswers);
 });
