@@ -12,6 +12,10 @@ var renderAnswers = function renderAnswers() {
   });
 }
 
+var clearAnswers = function clearAnswers() {
+  sessionStorage.clear();
+}
+
 $(function(){
   RadarChart.defaultConfig.color = function() {};
   RadarChart.defaultConfig.w = 330;
@@ -41,4 +45,5 @@ $(function(){
   });
 
   $(".results-page").ready(renderAnswers);
+  $(".retake-test").click(clearAnswers);
 });
