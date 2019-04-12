@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Self Assessment Prototype"
-bodyclass: "home"
+bodyclass: ""
 ---
 
 <div class="grid-row">
@@ -10,106 +10,14 @@ bodyclass: "home"
       <span class="heading-secondary">Better case management of FOI and SAR requests</span>
       Self Assessment Prototype
     </h1>
-
   </div>
 </div>
-
 <div class="grid-row">
-  <div class="column-two-thirds">
-    <form action="people" class="question-form">
-
-      <div class="form-group">
-        <fieldset>
-          <label class="form-label" for="authority-name">
-            Authority Name
-          </label>
-          <input class="form-control" id="authority-name" type="text" name="authority-name">
-        </fieldset>
-      </div>
-
-      <div class="form-group">
-        <fieldset>
-          <legend>
-            <h1 class="heading-medium">How many employees?</h1>
-          </legend>
-          <div class="multiple-choice">
-            <input id="employees-1" type="radio" name="employees" value="0-100" required>
-            <label for="employees-1">0-100</label>
-          </div>
-          <div class="multiple-choice">
-            <input id="employees-2" type="radio" name="employees" value="100-500" required>
-            <label for="employees-2">100-500</label>
-          </div>
-          <div class="multiple-choice">
-            <input id="employees-3" type="radio" name="employees" value="500-1000" required>
-            <label for="employees-3">500-1000</label>
-          </div>
-          <div class="multiple-choice">
-            <input id="employees-4" type="radio" name="employees" value="5000+" required>
-            <label for="employees-4">5000+</label>
-          </div>
-        </fieldset>
-      </div>
-
-      <div class="form-group">
-        <fieldset>
-          <legend>
-            <h1 class="heading-medium">Number of requests per year?</h1>
-          </legend>
-          <div class="multiple-choice">
-            <input id="requests-1" type="radio" name="requests" value="0-250" required>
-            <label for="requests-1">0-250</label>
-          </div>
-          <div class="multiple-choice">
-            <input id="requests-2" type="radio" name="requests" value="250-1000" required>
-            <label for="requests-2">250-1000</label>
-          </div>
-          <div class="multiple-choice">
-            <input id="requests-3" type="radio" name="requests" value="1000-2000" required>
-            <label for="requests-3">1000-2000</label>
-          </div>
-          <div class="multiple-choice">
-            <input id="requests-4" type="radio" name="requests" value="2000+" required>
-            <label for="requests-4">2000+</label>
-          </div>
-        </fieldset>
-      </div>
-
-      <div class="form-group">
-        <fieldset>
-          <legend>
-            <h1 class="heading-medium">Tier of council</h1>
-          </legend>
-          <div class="multiple-choice">
-            <input id="council-1" type="radio" name="tier" value="County Council" required>
-            <label for="council-1">County Council</label>
-          </div>
-          <div class="multiple-choice">
-            <input id="council-2" type="radio" name="tier" value="District Council" required>
-            <label for="council-2">District Council</label>
-          </div>
-          <div class="multiple-choice">
-            <input id="council-3" type="radio" name="tier" value="Unitary Authority" required>
-            <label for="council-3">Unitary Authority</label>
-          </div>
-          <div class="multiple-choice">
-            <input id="council-4" type="radio" name="tier" value="Metropolitan District" required>
-            <label for="council-4">Metropolitan District</label>
-          </div>
-          <div class="multiple-choice">
-            <input id="council-5" type="radio" name="tier" value="London Borough" required>
-            <label for="council-5">London Borough</label>
-          </div>
-          <div class="multiple-choice">
-            <input id="council-6" type="radio" name="tier" value="Town or Parish Council" required>
-            <label for="council-6">Town or Parish Council</label>
-          </div>
-        </fieldset>
-      </div>
-
-      <div class="form-group">
-        <input type="submit" class="button" value="Next">
-      </div>
-    </form>
+    <div class="column-two-thirds">
+      <p>
+       This is a prototype of a new tool to allow councils and other bodies to assess their capability to receive, manage, and respond to freedom of information requests.
+      </p>
+      <p>This prototype is part of the <a href="https://localdigital.gov.uk/funded-projects-local-digital-fund-round-one/better-case-management-of-foi-and-sar-requests/">Local Digital - Better Case Management of Freedom of Information and Subject Access Requests project</a>.</p>
+      <p><a class="button button-start" href="{{ "/start/" | prepend: site.baseurl }}" role="button">Start now</a></p>
   </div>
 </div>
