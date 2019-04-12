@@ -25,12 +25,16 @@ var clearAnswers = function clearAnswers() {
   sessionStorage.clear();
 }
 
-$(function(){
+var configureRadarChartDefaults = function configureRadarChartDefaults() {
   RadarChart.defaultConfig.color = function() {};
   RadarChart.defaultConfig.w = 330;
   RadarChart.defaultConfig.h = 330;
   RadarChart.defaultConfig.levels = 3;
   RadarChart.defaultConfig.maxValue = 5;
+}
+
+$(function(){
+  configureRadarChartDefaults();
 
   var data = [
     {
