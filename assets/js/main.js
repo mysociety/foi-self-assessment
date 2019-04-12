@@ -94,10 +94,16 @@ var configureRadarChartDefaults = function configureRadarChartDefaults() {
   RadarChart.defaultConfig.maxValue = 5;
 }
 
+var handleNotImplemented = function handleNotImplemented(evt) {
+  evt.preventDefault();
+  alert("This feature hasn't been implemented as part of the prototype sorry.");
+}
+
 $(function(){
   configureRadarChartDefaults();
   $('.question-form').submit(submitQuestionForm);
   $(".results-page").ready(renderRadarChart);
   $(".results-page").ready(renderAnswers);
   $(".retake-test").click(clearAnswers);
+  $(".not-implemented").click(handleNotImplemented);
 });
