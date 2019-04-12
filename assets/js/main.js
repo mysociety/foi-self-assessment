@@ -33,8 +33,11 @@ $(function(){
 
   $('.question-form').submit(function (evt) {
     evt.preventDefault();
-    storeAnswers();
-    window.location.href = $(this).attr("action");
+
+    if (!$(this).checkValidity || $(this).checkValidity()) {
+      storeAnswers();
+      window.location.href = $(this).attr("action");
+    }
   });
 
   $(".results-page").ready(renderAnswers);
