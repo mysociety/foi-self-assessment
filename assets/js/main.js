@@ -1,4 +1,8 @@
 var storeAnswers = function storeAnswers() {
+  $('form input[type="text"]').each(function() {
+    sessionStorage.setItem(this.name, this.value);
+  });
+
   $('form input[type="radio"]:checked').each(function() {
     sessionStorage.setItem(this.name, this.value);
   });
