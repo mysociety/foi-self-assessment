@@ -4,6 +4,15 @@ var storeAnswers = function storeAnswers() {
   });
 }
 
+var submitQuestionForm = function submitQuestionForm(evt) {
+  evt.preventDefault();
+
+  if (!$(this).checkValidity || $(this).checkValidity()) {
+    storeAnswers();
+    window.location.href = $(this).attr("action");
+  }
+}
+
 var renderAnswers = function renderAnswers() {
   $('[data-question]').each(function() {
     let key = this.dataset.question;
@@ -35,15 +44,7 @@ $(function(){
 
   RadarChart.draw(".results-radar-chart", data);
 
-  $('.question-form').submit(function (evt) {
-    evt.preventDefault();
-
-    if (!$(this).checkValidity || $(this).checkValidity()) {
-      storeAnswers();
-      window.location.href = $(this).attr("action");
-    }
-  });
-
+  $('.question-form').submit(submitQuestionForm);
   $(".results-page").ready(renderAnswers);
   $(".retake-test").click(clearAnswers);
 });
